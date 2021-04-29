@@ -8,11 +8,15 @@ const routes = [
     path: "/",
     redirect: "/home",
   },
-
   {
     path: "/home",
     name: "Home",
     component: () => import("../views/Home.vue"),
+  },
+  {
+    path: "/zy-baojia",
+    name: "Zy-baojia",
+    component: () => import("../views/Zy-baojia.vue"),
   },
 ];
 
