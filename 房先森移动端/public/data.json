@@ -1,44 +1,85 @@
 {
-    "list": [
+    "data": [
         {
-            "id": 1,
-            "title": "别打哈欠了",
-            "status": 0
+            "name":"陈冲",
+            "class":"优秀",
+            "hot":"738",
+            "zuopin":8,
+            "exp":"5年",
+            "pingjia":10,
+            "style":["现代/","美式/","简约/","新古典"]
         },
         {
-            "id": 2,
-            "title": "川是哈欠王",
-            "status": 1
+            "name":"冯绍宇",
+            "class":"主任",
+            "hot":"165",
+            "zuopin":6,
+            "exp":"8年",
+            "pingjia":0,
+            "style":["欧式/","田园/","简约"]
         },
         {
-            "id": 3,
-            "title": "七点半很早吗",
-            "status": 2
+            "name":"董玉明",
+            "class":"主任",
+            "hot":"3289",
+            "zuopin":7,
+            "exp":"8年",
+            "pingjia":0,
+            "style":["欧式/","田园/","简约"]
         },
         {
-            "id": 4,
-            "title": "北京欢迎你",
-            "status": 2
+            "name":"吴星",
+            "class":"主任",
+            "hot":"519",
+            "zuopin":8,
+            "exp":"5年",
+            "pingjia":0,
+            "style":["现代/","美式/","简约/","新古典"]
         },
         {
-            "id": 5,
-            "title": "期中考试考的是个啥",
-            "status": 2
+            "name":"张俊林",
+            "class":"主任",
+            "hot":"738",
+            "zuopin":0,
+            "exp":"8年",
+            "pingjia":0,
+            "style":["现代/","中式/","欧式/","简约/","日式"]
         },
         {
-            "id": 6,
-            "title": "申依川10分",
-            "status": 2
+            "name":"吴飞柯",
+            "class":"优秀",
+            "hot":"243",
+            "zuopin":8,
+            "exp":"2年",
+            "pingjia":0,
+            "style":["现代/","地中海/","欧式/","简约"]
         },
         {
-            "id": 7,
-            "title": "张鹏宇14分",
-            "status": 0
+            "name":"陆炎龙",
+            "class":"主任",
+            "hot":"177",
+            "zuopin":0,
+            "exp":"10年",
+            "pingjia":0,
+            "style":["现代/","美式/","欧式/","田园"]
         },
         {
-            "id": 8,
-            "title": "孙杰25分",
-            "status": 1
+            "name":"金俊超",
+            "class":"优秀",
+            "hot":"738",
+            "zuopin":8,
+            "exp":"5年",
+            "pingjia":10,
+            "style":["现代/","美式/","简约/","新古典"]
+        },
+        {
+            "name":"曾松",
+            "class":"优秀",
+            "hot":"738",
+            "zuopin":8,
+            "exp":"5年",
+            "pingjia":10,
+            "style":["现代/","美式/","简约/","新古典"]
         }
     ]
 }
