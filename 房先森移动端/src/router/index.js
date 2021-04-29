@@ -13,6 +13,15 @@ const routes = [
     path: "/home",
     name: "Home",
     component: () => import("../views/Home.vue"),
+  }, {
+    path: "/gmx-xiu",
+    name: "Gmx-xiu",
+    component: () => import("../views/Gmx-xiu.vue"),
+  },
+  {
+    path: "/gmx-fang",
+    name: "Gmx-fang",
+    component: () => import("../views/Gmx-fang.vue"),
   },
 ];
 
