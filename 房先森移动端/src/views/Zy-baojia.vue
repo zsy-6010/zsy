@@ -57,7 +57,7 @@
         <span style="color:#ff4351;">81,889,79</span>元
       </p>
       <div class="font1">您还可以选择</div>
-      <p style="margin:.36rem 0 .36rem .9rem">
+      <p style="margin:.36rem 0 .36rem 0">
         房先森装修半包套餐价,&emsp;&emsp;
         <span style="color:#eed215;">399</span>元/平米
       </p>
@@ -72,28 +72,67 @@
       <div class="xian2"></div>
     </div>
     <!-- 提供 -->
-    <div class="box5"></div>
+    <div class="box5">
+      <ul>
+        <li v-for="(item,index) in list" :key="index">
+          <i class="iconfont" :class="[item.icon]"></i>
+          <b>{{item.title}}</b>
+          <p>{{item.content}}</p>
+        </li>
+      </ul>
+    </div>
     <!-- 分割 -->
     <div class="box4"></div>
-    <!-- 简介 -->
-    <div class="box6">
-      房先森互联网家装有别于传统装修公司与其他装修中介平台，
-      以自营模式整合设计师与项目经理，杜绝项目转包外包，利用
-      互联网将工地进行在线全景直播，通过去中间环节，提供装修套餐+个性化定制服务。
-    </div>
+    <jianjie></jianjie>
     <!-- 分割 -->
     <div class="box4"></div>
 
   </div>
 </template>
 
-<script>
+<script>import jianjie from '../components/Zy-fxsjianjie.vue'
 export default {
   data() {
-    return {};
+    return {
+      list:[
+        {
+          icon:"icon-app",
+          title:"产品系列",
+          content:"半包、全包套餐、全屋定制及个性化升级"
+        },
+        {
+          icon:"icon-price",
+          title:"0元装修",
+          content:"与建行合作贷款,实现0元开启装修"
+        },
+        {
+          icon:"icon-live",
+          title:"工地直播",
+          content:"工地巡检照片、360度全景节点验收"
+        },
+        {
+          icon:"icon-preferential",
+          title:"合作优惠",
+          content:"正品材料工厂直供,F2C让利用户"
+        },
+        {
+          icon:"icon-construction-site",
+          title:"参观工地",
+          content:"随时预约参观工地,零距离感受施工工艺"
+        },
+        {
+          icon:"icon-protection",
+          title:"售后保障",
+          content:"整装2年质保,隐蔽水电工程10年质保"
+        },
+      ]
+    };
   },
   mounted() {},
-  methods: {}
+  methods: {},
+  components:{
+    jianjie,
+  }
 };
 </script>
 
@@ -227,16 +266,19 @@ export default {
     font-size: 0.36rem;
     padding: 0.1rem 0.25rem;
     background-color: #fff;
+    text-align: center;
   }
   p {
     font-size: 0.34rem;
     color: #999999;
-    margin: 0.6rem 0 0 1.4rem;
+    margin: 0.6rem 0 0 0;
+    text-align: center;
   }
   .font1 {
     font-size: 0.34rem;
     color: #333333;
-    margin: 0.65rem 0 0 2.55rem;
+    margin: 0.65rem 0 0 0;
+    text-align: center;
   }
   .yuyue {
     width: 86.4%;
@@ -249,8 +291,8 @@ export default {
     border-radius: 4px;
     outline: none;
     border: 1px solid #39c894;
-    margin-left: 0.49rem;
-    margin-bottom: 0.25rem;
+    margin:0 auto 0.25rem;
+    text-align: center;
   }
 }
 .box4 {
@@ -261,18 +303,48 @@ export default {
 }
 .box5 {
   width: 96%;
-  height: 6rem;
-  background-color: rgb(255, 245, 245);
+  height: 5.4rem;
+  background-color: rgb(255, 255, 255);
   margin: 0 auto;
+  ul{
+    margin-top: .45rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    li{
+      width: 33.33%;
+      height: 3rem;
+      // box-sizing: border-box;
+      // border: 1px solid #fafafa;
+      i{
+        margin: 0 auto;
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        background-color:#39c894;
+        font-size: .6rem;
+        text-align: center;
+        line-height: 1rem;
+        color: white;
+        border-radius: 50%;
+      }
+      b{
+        margin: .18rem 0;
+        display: block;
+        text-align: center;
+        font-weight: normal;
+        color: #333333;
+        font-size: .32rem;
+      }
+      p{
+        font-size: .26rem;
+        text-align: center;
+        color: #999999;
+      }
+    }
+  }
 }
-.box6 {
-  text-indent: 2em;
-  font-size: 0.3rem;
-  line-height: 0.52rem;
-  color: #333333;
-  width: 97%;
-  margin: 0.3rem auto;
-  // background-color: rgb(255, 243, 243);
-}
+
 
 </style>
