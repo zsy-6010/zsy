@@ -19,7 +19,12 @@ const routes = [
     name: "zsqRaiders",
     component: () => import("../views/ZsqRaiders.vue"),
   },
-  
+  {
+    path: "/Zsqliucheng",
+    name: "Zsqliucheng",
+    component: () => import("../views/Zsqliucheng.vue"),
+  },
+
 ];
 
 const router = new VueRouter({
