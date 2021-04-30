@@ -23,6 +23,16 @@ const routes = [
     name: "Gmx-fang",
     component: () => import("../views/Gmx-fang.vue"),
   },
+  {
+    path: "/gmx-xgt",
+    name: "Gmx-xgt",
+    component: () => import("../views/Gmx-xgt.vue"),
+  },
+  {
+    path: "/gmx-xgt1",
+    name: "Gmx-xgt1",
+    component: () => import("../views/Gmx-xgt1.vue"),
+  },
 ];
 
 const router = new VueRouter({

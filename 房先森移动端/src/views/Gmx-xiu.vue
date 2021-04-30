@@ -10,7 +10,7 @@
                 <img :src="item.img" @click="yy(item)">
                 <div id="font">
                     <div id="right">
-                        <p class="font1" style="text-align: left;">399元/㎡半包装修套餐</p>
+                        <p class="font1" style="text-align: left;">{{item.xiang}}</p>
                         <p class="font2" style="text-align: left;"><span style="color:grey;">特惠：</span>{{item.name}}</p>
                         </div>
                     <div id="left">
@@ -30,7 +30,7 @@
                 <img :src="item.img" @click="yy(item)">
                 <div id="font">
                     <div id="right">
-                        <p class="font1" style="text-align: left;">699元/㎡全包精装套餐</p>
+                        <p class="font1" style="text-align: left;">{{item.xiang}}</p>
                         <p class="font2" style="text-align: left;"><span style="color:grey;">正在发售：</span>{{item.name}}</p>
                         </div>
                     <div id="left">
@@ -41,61 +41,41 @@
                 </div>
             </div>
         </div>
-        <div id="wenzi1">
-   <div id="wenzi">
-            房先森互联网家装有别于传统装修公司与其他装修中介平台，以自营模式整合设计师与项目经理，杜绝项目转包外包，利用互联网将工地进行在线全景直播，播过去中间环节，提供装修套餐 + 个性化定制服务。
-        </div>
-        </div>
-  <footer>
-       <p id="hed"><i class="iconfont icon-hot-line" style="color: #39c894;"></i> 服务热线：400-9977-658</p>
-       <ul id="fot">
-           <li @click="tt(index)" v-for="(it,index) in list" :key="index" :class="qq==index?'ii':''">{{it.name}}</li>
-       </ul>
-  </footer>
+      <Fooot></Fooot>
     </div>
 </template>
 
 <script>
+import Fooot from '../components/Fooot'
 export default {
     data() {
         return {
-            list:[{
-                "name":"触屏版"
-            },
-            {
-                "name":"电脑版"
-            },
-            {
-                "name":"联系我们"
-            },
-            {
-                "name":"关于我们"
-            }],
             lss:[{
                 "img":"/切图/case/case.jpg",
                 "name":"可选399元/㎡品牌主材包",
-                 "price":"￥399元/㎡",
-                 "title":"295套"
+                "price":"￥399元/㎡",
+                "title":"295套",
+                "xiang":"399元/㎡半包装修套餐"
             }],
             lst:[{
                   "img":"/切图/case/case1.jpg",
                   "id":1,
                   "name":"全包套餐火爆预约中",
                   "price":"￥699元/㎡",
-                  "title":"221套"
+                  "title":"221套",
+                  "xiang":"699元/㎡全包精装套餐"
             }],
-            qq:-1
         };
     }, 
     mounted() {},
     methods: {
-        tt(index){
-            this.qq=index
-        },
         yy(item){
             this.$router.push({name:"Gmx-fang",query:{obj:item}})
         }
     },
+    components:{
+        Fooot
+    }
 };
 </script>
 
@@ -202,48 +182,5 @@ export default {
       }
     }
 }
-#wenzi1{
-    width: 100%;
-    height: 2.1rem;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: .3rem;
-    #wenzi{
-    width: 100%;
-    margin-top: .2rem;
-    height: 1.8rem;
-    background-color: white;
-    font-size: .3rem;
-    text-indent: 2em;
-    font-weight: 100;
-}
-}
-footer{
-    margin-top: .3rem;
-    width: 100%;
-    height: 2.5rem;
-    background-color: white;
-    font-size: .3rem;
-    display: flex;
-    flex-wrap: wrap;
-    #hed{
-        width: 6rem;
-        height: .4rem;
-        line-height: .6rem;
-        margin-left: 1.9rem;
-        margin-top: .3rem;
-    }
-    #fot{
-        width: 100%;
-        height: .8rem;
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
 
-    }
-}
-.ii{
-    color: #39c894;
-}
 </style>
