@@ -26,6 +26,7 @@
       <p class="p3">NO.10去污保洁</p>
       <p class="p4">NO.11软装搭配</p>
       <p class="p5">NO.12家居生活</p>
+      <span></span>
     </div>
   </div>
 </template>
