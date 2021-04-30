@@ -7,7 +7,7 @@
     </div>
     <div class="list">
       <ul>
-        <li v-for="(item, index) in data" :key="index">
+        <li v-for="(item, index) in data" :key="index" @click="gotodetil(item)">
           <div class="img">
             <div></div>
           </div>
@@ -56,12 +56,14 @@
         </p>
       </div>
     </div>
+    <foot></foot>
   </div>
 </template>
 
 <script>
 import fenl from "@/components/Zhzfenlei.vue";
 import fenlei from "@/components/fenlei.vue";
+import foot from "@/components/footer.vue";
 export default {
   data() {
     return {
@@ -82,11 +84,15 @@ export default {
       },
       fn2(){
           this.show=false
+      },
+      gotodetil(item){
+        this.$router.push({path:'/ZhzDesignx',query:{item}})
       }
   },
   components: {
     fenl,
-    fenlei
+    fenlei,
+    foot
   },
 };
 </script>
@@ -94,9 +100,9 @@ export default {
 <style lang='scss'>
 .mask {
   width: 100%;
-  height: 5.5rem;
+  height: 10rem;
   position: fixed;
-  top: 7.9rem;
+  top: 7.5rem;
   background-color: rgba(0, 0, 0, 0.308);
 //   z-index: 50;
 }
@@ -216,5 +222,6 @@ export default {
   box-sizing: border-box;
   border-bottom: 10px solid #eaeaea;
   font-size: 0.28rem;
+  line-height: .5rem;
 }
 </style>

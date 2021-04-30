@@ -19,6 +19,21 @@ const routes = [
     name: "ZhzDesign",
     component: () => import("../views/ZhzDesign.vue"),
   },
+  {
+    path: "/Zhzlives",
+    name: "Zhzlives",
+    component: () => import("../views/Zhzlives.vue"),
+  },
+  {
+    path: "/ZhzDesignx",
+    name: "ZhzDesignx",
+    component: () => import("../views/ZhzDesignx.vue"),
+  },
+  {
+    path: "/Zhzlivesx",
+    name: "Zhzlivesx",
+    component: () => import("../views/Zhzlivesx.vue"),
+  },
 ];
 
 const router = new VueRouter({
