@@ -8,12 +8,16 @@ const routes = [
     path: "/",
     redirect: "/home",
   },
-
   {
     path: "/home",
     name: "Home",
     component: () => import("../views/Home.vue"),
-  }, {
+  }
+  
+  
+  
+  
+  , {
     path: "/gmx-xiu",
     name: "Gmx-xiu",
     component: () => import("../views/Gmx-xiu.vue"),
