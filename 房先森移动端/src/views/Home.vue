@@ -3,36 +3,18 @@
 
     </div>
 </template>
+
+
 <script>
-// import  from '../components/'
 export default {
-    components:{
-       // 注册子组件
-
-    },
     data() {
-        return {
-
-        }
+        return {};
     },
-    methods: {
-        // 方法
-
-    },
-    computed: {
-        // 计算
-        num1(){
-        let res=0;
-
-        return res
-        }
-    },
-    filters: {
-    // 过滤
-
-    }
-}
+    mounted() {},
+    methods: {},
+};
 </script>
-<style lang='scss'>
+
+<style lang='scss' scoped>
 
 </style>

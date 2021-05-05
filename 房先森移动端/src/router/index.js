@@ -8,11 +8,30 @@ const routes = [
     path: "/",
     redirect: "/ZhzDesign",
   },
-
   {
     path: "/home",
     name: "Home",
     component: () => import("../views/Home.vue"),
+  }
+  , {
+    path: "/gmx-xiu",
+    name: "Gmx-xiu",
+    component: () => import("../views/Gmx-xiu.vue"),
+  },
+  {
+    path: "/gmx-fang",
+    name: "Gmx-fang",
+    component: () => import("../views/Gmx-fang.vue"),
+  },
+  {
+    path: "/gmx-xgt",
+    name: "Gmx-xgt",
+    component: () => import("../views/Gmx-xgt.vue"),
+  },
+  {
+    path: "/gmx-xgt1",
+    name: "Gmx-xgt1",
+    component: () => import("../views/Gmx-xgt1.vue"),
   },
   {
 
