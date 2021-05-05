@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import '@/assets/js/app.js'
+
 Vue.config.productionTip = false;
 
 import http from "./http/http.js";
@@ -14,11 +15,11 @@ import "vant/lib/index.css";
 Vue.use(Vant);
 //全部引入vant
 
-
 import axios from 'axios';
 Vue.prototype.$axios=axios
 
 import './assets/css/iconfont/iconfont.css'
+
 
 
 
