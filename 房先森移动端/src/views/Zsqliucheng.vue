@@ -1,5 +1,6 @@
 <template>
   <div>
+    <headers></headers>
     <div class="top-img">
       <img src="/切图/process/process1.jpg" alt />
     </div>
@@ -32,9 +33,11 @@
 </template>
 <script>
 // import  from '../components/'
+import headers from "../components/Header/headers.vue";
 export default {
   components: {
     // 注册子组件
+    headers,
   },
   data() {
     return {};

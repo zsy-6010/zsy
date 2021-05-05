@@ -1,5 +1,6 @@
 <template>
   <div>
+    <headers></headers>
     <!-- 头部广告 -->
     <header class="header">
       <!-- 二维码 -->
@@ -67,9 +68,11 @@
 </template>
 <script>
 // import  from '../components/'
+import headers from "../components/Header/headers.vue";
 export default {
   components: {
     // 注册子组件
+    headers,
   },
   data() {
     return {

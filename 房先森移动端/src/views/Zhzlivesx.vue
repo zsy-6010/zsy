@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <headers></headers>
     <div class="box">
       <div class="title">{{item.name}}<span>{{item.job}}</span></div>
       <div class="second">
@@ -114,6 +115,7 @@
 
 <script>
 import foot from '@/components/footer.vue'
+import headers from "../components/Header/headers.vue";
 export default {
   data() {
     return {
@@ -123,7 +125,8 @@ export default {
   mounted() {},
   methods: {},
   components:{
-    foot
+    foot,
+    headers,
   }
 };
 </script>

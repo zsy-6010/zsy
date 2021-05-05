@@ -1,5 +1,6 @@
 <template>
   <div class>
+    <headers></headers>
     <!-- 装修报价图片 -->
     <div class="box">
       <img src="/切图/10quoted.jpg" alt width="100%" />
@@ -90,7 +91,9 @@
   </div>
 </template>
 
-<script>import jianjie from '../components/Zy-fxsjianjie.vue'
+<script>
+import jianjie from '../components/Zy-fxsjianjie.vue'
+import headers from "../components/Header/headers.vue";
 export default {
   data() {
     return {
@@ -132,6 +135,7 @@ export default {
   methods: {},
   components:{
     jianjie,
+    headers,
   }
 };
 </script>

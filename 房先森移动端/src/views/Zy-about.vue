@@ -1,5 +1,6 @@
 <template>
   <div class>
+    <headers></headers>
     <!-- 图片 -->
     <div class="box">
       <img src="/zy-about-img.png" alt />
@@ -38,12 +39,16 @@
 </template>
 
 <script>
+import headers from "../components/Header/headers.vue";
 export default {
   data() {
     return {};
   },
   mounted() {},
-  methods: {}
+  methods: {},
+  components:{
+    headers
+  }
 };
 </script>
 

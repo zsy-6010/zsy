@@ -1,5 +1,7 @@
 <template>
+    
     <div class='gmx-bgc'>
+        <headers></headers>
         <p id="head"></p>
         <div id="first" v-for="(item,index) in lss" :key="index">
             <div id="im">
@@ -47,6 +49,7 @@
 
 <script>
 import Fooot from '../components/Fooot'
+import headers from "../components/Header/headers.vue";
 export default {
     data() {
         return {
@@ -74,7 +77,8 @@ export default {
         }
     },
     components:{
-        Fooot
+        Fooot,
+        headers,
     }
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <headers></headers>
     <fenl @fn="fn1()"></fenl>
     <fenlei v-show="show" @fn2="fn2"></fenlei>
     <div class="mask" v-show="show" @click.stop="show = false"></div>
@@ -41,6 +42,7 @@
 import fenl from "@/components/Zhzfenlei.vue";
 import fenlei from "@/components/fenlei.vue";
 import foot from "@/components/footer.vue";
+import headers from "../components/Header/headers.vue";
 
 export default {
   data() {
@@ -69,7 +71,8 @@ export default {
   components: {
     fenl,
     fenlei,
-    foot
+    foot,
+    headers,
   },
 };
 </script>

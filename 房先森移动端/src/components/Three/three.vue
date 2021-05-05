@@ -81,7 +81,7 @@ export default {
         font-size: 0.4rem;
         line-height: 0.7rem;
         span{
-            margin-left: -4rem;
+            margin-left: 0.5rem;
         }
 }
 .box2{

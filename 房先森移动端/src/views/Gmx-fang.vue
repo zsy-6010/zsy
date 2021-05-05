@@ -1,5 +1,6 @@
 <template>
     <div class='fangan1'>
+        <headers></headers>
          <div id="head"></div>
          <div id="jieshao">
             <img :src="item.img" alt="">
@@ -38,6 +39,7 @@
 
 <script>
 import Fooot from '../components/Fooot'
+import headers from "../components/Header/headers.vue";
 export default {
     data() {
         return {
@@ -52,7 +54,8 @@ export default {
         }
     },
     components:{
-        Fooot
+        Fooot,
+        headers,
     }
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
     <div class='xgt'>
+        <headers></headers>
         <div id="head"></div>
         <div id="hed">
             <span class="a1a">
@@ -49,6 +50,7 @@
 
 <script>
 import Fooot from '../components/Fooot'
+import headers from "../components/Header/headers.vue";
 export default {
     components:{
         Fooot
@@ -123,6 +125,9 @@ export default {
             this.$router.push({name:"Gmx-xgt1",query:{obj:item}})
         }
     },
+    components:{
+        headers,
+    }
 };
 </script>
 

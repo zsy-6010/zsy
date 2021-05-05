@@ -55,7 +55,7 @@ export default {
   font-size: 0.4rem;
   line-height: 0.7rem;
   span {
-    margin-left: -4rem;
+    margin-left: 0.5rem;
   }
 }
 .xian {
@@ -82,7 +82,7 @@ export default {
     font-size: 0.3rem;
     line-height: 0.6rem;
     .zi{
-        margin-left: -3.5rem;
+        // margin-left: -3.5rem;
         span{
             margin-left: 0.5rem;
             background: #2bb281;

@@ -1,5 +1,6 @@
 <template>
     <div class='xgt1'>
+        <headers></headers>
         <ul id="heddd">
             <li class="a11a">
                 <i @click="tt" class="iconfont icon-back" style="color:gray; font-size:.8rem;"></i>
@@ -31,6 +32,7 @@
 
 <script>
 import Fooot from '../components/Fooot'
+import headers from "../components/Header/headers.vue";
 export default {
     data() {
         return {
@@ -48,7 +50,8 @@ export default {
       }
     },
     components:{
-        Fooot
+        Fooot,
+        headers,
     },
 };
 </script>

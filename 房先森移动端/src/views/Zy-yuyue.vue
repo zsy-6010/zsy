@@ -1,5 +1,6 @@
 <template>
   <div class>
+    <headers></headers>
     <!-- 图片 -->
     <div class="box">
       <img src="/切图/banner1.jpg" alt width="100%" />
@@ -81,6 +82,7 @@
 
 <script>
 import jianjie from '../components/Zy-fxsjianjie.vue'
+import headers from "../components/Header/headers.vue";
 export default {
   data() {
     return {
@@ -122,6 +124,7 @@ export default {
   methods: {},
   components:{
       jianjie,
+      headers,
   }
 };
 </script>

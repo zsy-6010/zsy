@@ -1,5 +1,6 @@
 <template>
   <div class="">
+    <headers></headers>
     <div class="information">
       <div class="img">
         <div></div>
@@ -80,6 +81,7 @@
 
 <script>
 import foot from '@/components/footer.vue'
+import headers from "../components/Header/headers.vue";
 export default {
   data() {
     return {
@@ -96,7 +98,8 @@ export default {
   },
   methods: {},
   components:{
-    foot
+    foot,
+    headers,
   }
 };
 </script>

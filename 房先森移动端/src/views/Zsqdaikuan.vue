@@ -1,5 +1,6 @@
 <template>
   <div>
+    <headers></headers>
     <!-- 头部广告 -->
     <div class="top-img">
       <img src="/切图/loans/loans.jpg" alt />
@@ -260,9 +261,11 @@
 </template>
 <script>
 // import  from '../components/'
+import headers from "../components/Header/headers.vue";
 export default {
   components: {
     // 注册子组件
+    headers,
   },
   data() {
     return {};
@@ -280,6 +283,7 @@ export default {
   filters: {
     // 过滤
   },
+  
 };
 </script>
 <style lang='scss' scoped>

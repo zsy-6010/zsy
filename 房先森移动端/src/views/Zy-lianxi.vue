@@ -1,5 +1,6 @@
 <template>
   <div class>
+    <headers></headers>
     <!-- 地图 -->
     <div class="box1">
       <img src="/zy-map.png" alt />
@@ -33,6 +34,7 @@
 
 <script>
 import jianjie from '../components/Zy-fxsjianjie.vue'
+import headers from "../components/Header/headers.vue";
 export default {
   data() {
     return {};
@@ -41,6 +43,7 @@ export default {
   methods: {},
   components:{
       jianjie,
+      headers,
   }
 };
 </script>
