@@ -71,7 +71,26 @@ const routes = [
     name: "Zhzlivesx",
     component: () => import("../views/Zhzlivesx.vue"),
   },
-
+  {
+    path: "/zy-baojia",
+    name: "Zy-baojia",
+    component: () => import("../views/Zy-baojia.vue"),
+  },
+  {
+    path: "/zy-yuyue",
+    name: "Zy-yuyue",
+    component: () => import("../views/Zy-yuyue.vue"),
+  },
+  {
+    path: "/zy-lianxi",
+    name: "Zy-lianxi",
+    component: () => import("../views/Zy-lianxi.vue"),
+  },
+  {
+    path: "/zy-about",
+    name: "Zy-about",
+    component: () => import("../views/Zy-about.vue"),
+  }
 ];
 
 const router = new VueRouter({
