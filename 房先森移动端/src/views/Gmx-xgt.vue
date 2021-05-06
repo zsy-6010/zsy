@@ -127,6 +127,7 @@ export default {
     },
     components:{
         headers,
+        Fooot
     }
 };
 </script>
